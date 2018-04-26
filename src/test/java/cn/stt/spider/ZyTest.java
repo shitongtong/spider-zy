@@ -33,7 +33,7 @@ public class ZyTest {
             List<Book> bookList = new ArrayList<>();
             ZySpider.getBookList(bookList, bookType);
             LOGGER.info("bookList.size()={}", bookList.size());
-            double price = 2;
+            double price = 1;
             List<Book> bookDetailList = ZySpider.getBookDetailList(bookList, price);
             LOGGER.info("bookDetailList.size()={}", bookDetailList.size());
             FileWriter fw = new FileWriter(new File("d:\\zybook_" + type + "_" + price + ".txt"));
